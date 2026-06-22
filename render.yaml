@@ -7,6 +7,12 @@ services:
     dockerfilePath: ./backend/Dockerfile
     healthCheckPath: /api-docs
     envVars:
+      - key: SPRING_DATASOURCE_URL
+        sync: false
+      - key: SPRING_DATASOURCE_USERNAME
+        sync: false
+      - key: SPRING_DATASOURCE_PASSWORD
+        sync: false
       - key: MAIL_USERNAME
         sync: false
       - key: MAIL_PASSWORD
